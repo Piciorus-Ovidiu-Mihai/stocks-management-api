@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gh6HI6uy1WmZUxganOVNJ2D7+m+plGjjsnKg7YtP6wycqcfWz8yxsbjLb2d6Mwk3hg+CEXcN5QBwGx0m+gcgEg==",
+  "dgSpecHash": "+zmc8qduiQnQt82Ep0rj5Yw2Eduw2ISlaFOnwNxhvxzwm3QebKh8hln19TQOEkntN0WPQuYtjifPS1p+Y83z+Q==",
   "success": true,
-  "projectFilePath": "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.Application\\StocksManagement.Application.csproj",
+  "projectFilePath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Application\\StocksManagement.Application.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

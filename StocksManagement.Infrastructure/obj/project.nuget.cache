@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HJDidyd9nS2pipSy9XHWLDxZamPhZRDIBARs3GjN5zOgIDrwpG4tA6+JlJjCPxQeCF1GQN5gMW5yraEpcqH+XQ==",
+  "dgSpecHash": "jM6CiWZWa1BF/n3HzwPjohcOCzx+qGHcMctMSsdc6MLQoH6hPLWWRQZ3W+nzIBCnh9FO7m7NzdhfUE6kYjNuYQ==",
   "success": true,
-  "projectFilePath": "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.Infrastructure\\StocksManagement.Infrastructure.csproj",
+  "projectFilePath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Infrastructure\\StocksManagement.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ovidiu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ovidiu\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

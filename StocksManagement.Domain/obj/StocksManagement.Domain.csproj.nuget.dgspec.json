@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.Domain\\StocksManagement.Domain.csproj": {}
+    "C:\\Personal Projects\\StocksManagement\\StocksManagement.Domain\\StocksManagement.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.Domain\\StocksManagement.Domain.csproj": {
+    "C:\\Personal Projects\\StocksManagement\\StocksManagement.Domain\\StocksManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.Domain\\StocksManagement.Domain.csproj",
+        "projectUniqueName": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Domain\\StocksManagement.Domain.csproj",
         "projectName": "StocksManagement.Domain",
-        "projectPath": "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.Domain\\StocksManagement.Domain.csproj",
+        "projectPath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Domain\\StocksManagement.Domain.csproj",
         "packagesPath": "C:\\Users\\Ovidiu\\.nuget\\packages\\",
-        "outputPath": "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.Domain\\obj\\",
+        "outputPath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ovidiu\\AppData\\Roaming\\NuGet\\NuGet.Config",

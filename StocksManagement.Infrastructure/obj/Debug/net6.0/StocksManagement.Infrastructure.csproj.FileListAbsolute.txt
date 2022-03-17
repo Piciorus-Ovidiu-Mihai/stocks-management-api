@@ -17,3 +17,11 @@ C:\Programming Stuff\StocksManagement.API\StocksManagement.Infrastructure\obj\De
 C:\Programming Stuff\StocksManagement.API\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.pdb
 C:\Programming Stuff\StocksManagement.API\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.genruntimeconfig.cache
 C:\Programming Stuff\StocksManagement.API\StocksManagement.Infrastructure\obj\Debug\net6.0\ref\StocksManagement.Infrastructure.dll
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.csproj.AssemblyReference.cache
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.AssemblyInfoInputs.cache
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.AssemblyInfo.cs
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.dll
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\refint\StocksManagement.Infrastructure.dll
+C:\Personal Projects\StocksManagement\StocksManagement.Infrastructure\obj\Debug\net6.0\StocksManagement.Infrastructure.pdb

@@ -65,3 +65,13 @@ C:\Programming Stuff\StocksManagement.API\StocksManagement.API\obj\Debug\net6.0\
 C:\Programming Stuff\StocksManagement.API\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.pdb
 C:\Programming Stuff\StocksManagement.API\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.genruntimeconfig.cache
 C:\Programming Stuff\StocksManagement.API\StocksManagement.API\obj\Debug\net6.0\ref\StocksManagement.API.dll
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.csproj.AssemblyReference.cache
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.AssemblyInfoInputs.cache
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.AssemblyInfo.cs
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.csproj.CoreCompileInputs.cache
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.dll
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\refint\StocksManagement.API.dll
+C:\Personal Projects\StocksManagement\StocksManagement.API\obj\Debug\net6.0\StocksManagement.API.pdb

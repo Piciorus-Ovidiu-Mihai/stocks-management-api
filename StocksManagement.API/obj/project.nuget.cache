@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+Qu/VuEUWFIELnB+r1lxD7YeUEjhcWqwVhvbwY8E6L41gVr+bLuf47yotJHl4w/hB+4LSuin60OrqDFJJadO5w==",
+  "dgSpecHash": "6vnyVAL5zICgxzs2TubEtwRuhPSgqfnt9xjWs/WObRUjtv5OIziGuP1AZPUrtbRwGXExJ2IOrowLAcRfNK/FYg==",
   "success": true,
-  "projectFilePath": "C:\\Programming Stuff\\StocksManagement.API\\StocksManagement.API\\StocksManagement.API.csproj",
+  "projectFilePath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.API\\StocksManagement.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ovidiu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ovidiu\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
