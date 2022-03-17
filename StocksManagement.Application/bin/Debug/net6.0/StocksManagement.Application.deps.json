@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "StocksManagement.Application/1.0.0": {
+        "dependencies": {
+          "StocksManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "StocksManagement.Application.dll": {}
+        }
+      },
+      "StocksManagement.Domain/1.0.0": {
+        "runtime": {
+          "StocksManagement.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "StocksManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StocksManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

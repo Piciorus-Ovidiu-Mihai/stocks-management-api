@@ -1,0 +1,15 @@
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\bin\Debug\net6.0\StocksManagement.Application.deps.json
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\bin\Debug\net6.0\StocksManagement.Application.dll
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\bin\Debug\net6.0\StocksManagement.Application.pdb
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\bin\Debug\net6.0\StocksManagement.Domain.dll
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\bin\Debug\net6.0\StocksManagement.Domain.pdb
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.csproj.AssemblyReference.cache
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.AssemblyInfoInputs.cache
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.AssemblyInfo.cs
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.csproj.CoreCompileInputs.cache
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.csproj.CopyComplete
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.dll
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\refint\StocksManagement.Application.dll
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\StocksManagement.Application.pdb
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Application\obj\Debug\net6.0\ref\StocksManagement.Application.dll

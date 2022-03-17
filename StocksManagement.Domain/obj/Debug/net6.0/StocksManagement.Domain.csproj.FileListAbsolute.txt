@@ -1,0 +1,12 @@
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\bin\Debug\net6.0\StocksManagement.Domain.deps.json
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\bin\Debug\net6.0\StocksManagement.Domain.dll
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\bin\Debug\net6.0\StocksManagement.Domain.pdb
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\StocksManagement.Domain.csproj.AssemblyReference.cache
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\StocksManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\StocksManagement.Domain.AssemblyInfoInputs.cache
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\StocksManagement.Domain.AssemblyInfo.cs
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\StocksManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\StocksManagement.Domain.dll
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\refint\StocksManagement.Domain.dll
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\StocksManagement.Domain.pdb
+C:\Programming Stuff\StocksManagement.API\StocksManagement.Domain\obj\Debug\net6.0\ref\StocksManagement.Domain.dll
