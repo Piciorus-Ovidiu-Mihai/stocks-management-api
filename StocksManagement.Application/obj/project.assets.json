@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Application\\StocksManagement.Application.csproj",
+      "projectUniqueName": "C:\\Programming Stuff\\StocksManagementAPI\\StocksManagement.Application\\StocksManagement.Application.csproj",
       "projectName": "StocksManagement.Application",
-      "projectPath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Application\\StocksManagement.Application.csproj",
+      "projectPath": "C:\\Programming Stuff\\StocksManagementAPI\\StocksManagement.Application\\StocksManagement.Application.csproj",
       "packagesPath": "C:\\Users\\Ovidiu\\.nuget\\packages\\",
-      "outputPath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Application\\obj\\",
+      "outputPath": "C:\\Programming Stuff\\StocksManagementAPI\\StocksManagement.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ovidiu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Personal Projects\\StocksManagement\\StocksManagement.Domain\\StocksManagement.Domain.csproj": {
-              "projectPath": "C:\\Personal Projects\\StocksManagement\\StocksManagement.Domain\\StocksManagement.Domain.csproj"
+            "C:\\Programming Stuff\\StocksManagementAPI\\StocksManagement.Domain\\StocksManagement.Domain.csproj": {
+              "projectPath": "C:\\Programming Stuff\\StocksManagementAPI\\StocksManagement.Domain\\StocksManagement.Domain.csproj"
             }
           }
         }
