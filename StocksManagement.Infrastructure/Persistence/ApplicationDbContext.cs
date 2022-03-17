@@ -11,7 +11,9 @@ namespace StocksManagement.Infrastructure.Persistence
 
         }
 
-        DbSet<User> Users;
-        DbSet<Role> Roles;
+        DbSet<User> Users { get; set; }
+        DbSet<Role> Roles { get; set; }
+        DbSet<Product> Products { get; set; }
+        DbSet<Storage> Storages { get; set; }
     }
 }

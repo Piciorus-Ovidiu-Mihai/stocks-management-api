@@ -494,6 +494,7 @@
       "StocksManagement.Infrastructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.3",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.3",
           "StocksManagement.Application": "1.0.0",
           "StocksManagement.Domain": "1.0.0"
         },

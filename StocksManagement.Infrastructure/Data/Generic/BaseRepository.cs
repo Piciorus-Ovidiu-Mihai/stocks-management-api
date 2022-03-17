@@ -1,59 +1,51 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using StocksManagement.Application.RepositoryInterfaces.Generic;
 using StocksManagement.Infrastructure.Persistence;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Linq.Expressions;
 
 namespace StocksManagement.Infrastructure.Data.Generic
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
-        private readonly ApplicationDbContext _dbContext;
+        private readonly ApplicationDbContext dbContext;
+        private readonly DbSet<T> entities;
         public BaseRepository(ApplicationDbContext dbContext)
         {
-            _dbContext = dbContext;
+            this.dbContext = dbContext;
+            this.entities = dbContext.Set<T>();
         }
-        public virtual T GetById(int id)
+        public async Task<IEnumerable<T>> GetAllAsync()
         {
-            return _dbContext.Set<T>().Find(id);
+            return await entities.ToListAsync();
+        }
+        public virtual async Task<T> GetById(int id)
+        {
+            return await dbContext.Set<T>().FindAsync(id);
         }
         public virtual IEnumerable<T> List()
         {
-            return _dbContext.Set<T>().AsEnumerable();
+            return dbContext.Set<T>().AsEnumerable();
         }
-        public virtual IEnumerable<T> List(System.Linq.Expressions.Expression<Func<T, bool>> predicate)
+        public virtual IEnumerable<T> List(Expression<Func<T, bool>> predicate)
         {
-            return _dbContext.Set<T>()
+            return dbContext.Set<T>()
                    .Where(predicate)
                    .AsEnumerable();
         }
-        public void Insert(T entity)
+        public void Add(T entity)
         {
-            _dbContext.Set<T>().Add(entity);
-            _dbContext.SaveChanges();
+            dbContext.Set<T>().Add(entity);
+            dbContext.SaveChangesAsync();
         }
-        public void Update(T entity)
+        public void Edit(T entity)
         {
-            _dbContext.Entry(entity).State = EntityState.Modified;
-            _dbContext.SaveChanges();
+            dbContext.Entry(entity).State = EntityState.Modified;
+            dbContext.SaveChangesAsync();
         }
         public void Delete(T entity)
         {
-            _dbContext.Set<T>().Remove(entity);
-            _dbContext.SaveChanges();
-        }
-
-        public void Add(T entity)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Edit(T entity)
-        {
-            throw new NotImplementedException();
+            dbContext.Set<T>().Remove(entity);
+            dbContext.SaveChangesAsync();
         }
     }
 }
