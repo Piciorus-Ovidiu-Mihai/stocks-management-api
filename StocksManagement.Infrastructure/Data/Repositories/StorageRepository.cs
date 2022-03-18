@@ -5,7 +5,7 @@ using StocksManagement.Infrastructure.Persistence;
 
 namespace StocksManagement.Infrastructure.Data.Repositories
 {
-    internal class StorageRepository : BaseRepository<Storage>, IStorageRepository
+    public class StorageRepository : BaseRepository<Storage>, IStorageRepository
     {
         public StorageRepository(ApplicationDbContext dbContext) : base(dbContext)
         {

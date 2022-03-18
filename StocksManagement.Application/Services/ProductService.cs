@@ -37,5 +37,15 @@ namespace StocksManagement.Application.Services
         {
             productRepository.Edit(product);
         }
+
+        public void UpdateById(int id)
+        {
+            productRepository.DeleteById(id);
+        }
+
+        public void DeleteById(int id)
+        {
+            productRepository.DeleteById(id);
+        }
     }
 }

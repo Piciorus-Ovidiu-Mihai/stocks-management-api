@@ -12,14 +12,14 @@ namespace StocksManagement.Application.Services
             this.userRepository = userRepository;
         }
 
-        public void Create(User storage)
+        public void Create(User user)
         {
-            userRepository.Add(storage);
+            userRepository.Add(user);
         }
 
-        public void Delete(User storage)
+        public void Delete(User user)
         {
-            userRepository.Delete(storage);
+            userRepository.Delete(user);
         }
 
         public async Task<IEnumerable<User>> GetAllUsers()
@@ -31,10 +31,20 @@ namespace StocksManagement.Application.Services
         {
             return await userRepository.GetById(id);
         }
-
-        public void Update(User storage)
+        public void UpdateById(int id)
         {
-            userRepository.Edit(storage);
+            userRepository.DeleteById(id);
+        }
+
+        public void DeleteById(int id)
+        {
+            userRepository.DeleteById(id);
+        }
+
+        public void Update(User user)
+        {
+            userRepository.Edit(user);
         }
     }
+
 }

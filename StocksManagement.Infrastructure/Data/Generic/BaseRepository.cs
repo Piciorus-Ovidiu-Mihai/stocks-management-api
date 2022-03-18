@@ -22,6 +22,17 @@ namespace StocksManagement.Infrastructure.Data.Generic
         {
             return await dbContext.Set<T>().FindAsync(id);
         }
+        public async void DeleteById(int id)
+        {
+            var entity = await GetById(id);
+            dbContext.Set<T>().Remove(entity);
+        }
+        public async void UpdateById(int id)
+        {
+            var entity = await GetById(id);
+            dbContext.Entry(entity).State = EntityState.Modified;
+            _ = dbContext.SaveChangesAsync();
+        }
         public virtual IEnumerable<T> List()
         {
             return dbContext.Set<T>().AsEnumerable();

@@ -8,6 +8,8 @@ namespace StocksManagement.Application.RepositoryInterfaces.Generic
         Task<T> GetById(int id);
         IEnumerable<T> List();
         IEnumerable<T> List(Expression<Func<T, bool>> predicate);
+        void DeleteById(int id);
+        void UpdateById(int id);
         void Add(T entity);
         void Delete(T entity);
         void Edit(T entity);

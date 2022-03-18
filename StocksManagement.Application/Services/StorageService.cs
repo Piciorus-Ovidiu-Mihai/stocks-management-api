@@ -23,6 +23,11 @@ namespace StocksManagement.Application.Services
             storageRepository.Delete(storage);
         }
 
+        public void DeleteById(int id)
+        {
+            storageRepository.DeleteById(id);
+        }
+
         public async Task<IEnumerable<Storage>> GetAllStorages()
         {
             return await storageRepository.GetAllAsync();
@@ -36,6 +41,11 @@ namespace StocksManagement.Application.Services
         public void Update(Storage storage)
         {
             storageRepository.Edit(storage);
+        }
+
+        public void UpdateById(int id)
+        {
+            storageRepository.DeleteById(id);
         }
     }
 }

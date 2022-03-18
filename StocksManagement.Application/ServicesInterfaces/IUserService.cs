@@ -6,8 +6,10 @@ namespace StocksManagement.Application.ServicesInterfaces
     {
         public Task<User> GetUserById(int id);
         public Task<IEnumerable<User>> GetAllUsers();
-        public void Create(User storage);
-        public void Update(User storage);
-        public void Delete(User storage);
+        public void Create(User user);
+        public void Update(User user);
+        public void Delete(User user);
+        public void UpdateById(int id);
+        public void DeleteById(int id);
     }
 }

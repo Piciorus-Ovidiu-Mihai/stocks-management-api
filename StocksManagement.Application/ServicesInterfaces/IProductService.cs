@@ -6,8 +6,10 @@ namespace StocksManagement.Application.ServicesInterfaces
     {
         public Task<Product> GetProductById(int id);
         public Task<IEnumerable<Product>> GetAllProducts();
-        public void Create(Product storage);
-        public void Update(Product storage);
-        public void Delete(Product storage);
+        public void Create(Product product);
+        public void Update(Product product);
+        public void Delete(Product product);
+        public void DeleteById(int id);
+        public void UpdateById(int id);
     }
 }
