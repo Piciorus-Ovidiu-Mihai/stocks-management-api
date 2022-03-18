@@ -10,5 +10,5 @@ namespace StocksManagement.API.Controllers
         {
             this.productService = productService;
         }
-    }
+    } 
 }
