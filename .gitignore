@@ -495,3 +495,10 @@ StocksManagement.Infrastructure/obj/Debug/net6.0/StocksManagement.Infrastructure
 StocksManagement.Infrastructure/obj/Debug/net6.0/StocksManagement.Infrastructure.pdb
 *.dll
 *.pdb
+StocksManagement.API/obj/Debug/net6.0/refint/StocksManagement.API.dll
+StocksManagement.API/obj/Debug/net6.0/StocksManagement.API.csproj.AssemblyReference.cache
+StocksManagement.API/obj/Debug/net6.0/StocksManagement.API.dll
+StocksManagement.API/obj/Debug/net6.0/StocksManagement.API.pdb
+StocksManagement.Application/obj/Debug/net6.0/StocksManagement.Application.csproj.AssemblyReference.cache
+StocksManagement.Application/Services/StorageService.cs
+StocksManagement.Infrastructure/obj/Debug/net6.0/StocksManagement.Infrastructure.csproj.AssemblyReference.cache
