@@ -1,5 +1,7 @@
-﻿using StocksManagement.Application.ServicesInterfaces;
+﻿using AutoMapper;
+using StocksManagement.Application.ServicesInterfaces;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.Storage.Request;
 using StocksManagement.Domain.RepositoryInterfaces.Repositories;
 
 namespace StocksManagement.Application.Services
@@ -7,15 +9,17 @@ namespace StocksManagement.Application.Services
     public class ProductService : IProductService
     {
         private readonly IProductRepository productRepository;
+        private readonly IMapper mapper;
 
-        public ProductService(IProductRepository productRepository)
+        public ProductService(IProductRepository productRepository, IMapper mapper)
         {
             this.productRepository = productRepository;
+            this.mapper = mapper;
         }
 
-        public void Create(Product product)
+        public void Create(ProductCreateRequest productCreateRequest)
         {
-            productRepository.Add(product);
+            productRepository.Add(mapper.Map<Product>(productCreateRequest));
         }
 
         public void Delete(Product product)
@@ -40,7 +44,7 @@ namespace StocksManagement.Application.Services
 
         public void UpdateById(int id)
         {
-            productRepository.DeleteById(id);
+            productRepository.UpdateById(id);
         }
 
         public void DeleteById(int id)

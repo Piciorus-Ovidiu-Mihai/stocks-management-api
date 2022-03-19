@@ -13,28 +13,33 @@ namespace StocksManagement.API.Controllers
             this.userService = userService;
         }
 
+        [HttpGet("GetAllUsers")]
         public async Task<ActionResult> GetAllUsers()
         {
             var result = await userService.GetAllUsers();
             return Ok(result);
         }
 
+        [HttpGet("{id}")]
         public async Task<ActionResult> GetUserById(int userId)
         {
             var result = await userService.GetUserById(userId);
             return Ok(result);
         }
 
+        [HttpDelete("{id}")]
         public void DeleteUserById(int userId)
         {
             userService.DeleteById(userId);
         }
 
-        public void UpdateById(int userId)
+        [HttpPut]
+        public void Update(User user)
         {
-            userService.UpdateById(userId);
+            userService.Update(user);
         }
 
+        [HttpPost]
         public void Create(User user)
         {
             userService.Create(user);

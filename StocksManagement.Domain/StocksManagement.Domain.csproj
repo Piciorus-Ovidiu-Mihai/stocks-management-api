@@ -8,6 +8,10 @@
 
   <ItemGroup>
     <Folder Include="Enum\" />
+    <Folder Include="Models\Storage\Request\" />
+    <Folder Include="Models\Storage\Response\" />
+    <Folder Include="Models\User\Response\" />
+    <Folder Include="Models\User\Request\" />
   </ItemGroup>
 
 </Project>

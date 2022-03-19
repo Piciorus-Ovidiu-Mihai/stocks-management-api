@@ -13,28 +13,33 @@ namespace StocksManagement.API.Controllers
             this.storageService = storageService;
         }
 
+        [HttpGet("GetAllStorages")]
         public async Task<ActionResult> GetAllStorages()
         {
             var result = await storageService.GetAllStorages();
             return Ok(result);
         }
 
+        [HttpGet("{id}")]
         public async Task<ActionResult> GetStorageById(int storageId)
         {
             var result = await storageService.GetStorageById(storageId);
             return Ok(result);
         }
 
+        [HttpDelete("{id}")]
         public void DeleteStorageById(int storageId)
         {
             storageService.DeleteById(storageId);
         }
 
-        public void UpdateById(int storageId)
+        [HttpPut]
+        public void Update(Storage storage)
         {
-            storageService.UpdateById(storageId);
+            storageService.Update(storage);
         }
 
+        [HttpPost]
         public void Create(Storage storage)
         {
             storageService.Create(storage);
