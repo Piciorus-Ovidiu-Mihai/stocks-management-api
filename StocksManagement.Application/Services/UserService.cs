@@ -1,20 +1,25 @@
-﻿using StocksManagement.Application.RepositoryInterfaces.Repositories;
+﻿using AutoMapper;
+using StocksManagement.Application.RepositoryInterfaces.Repositories;
 using StocksManagement.Application.ServicesInterfaces;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.User.Request;
 
 namespace StocksManagement.Application.Services
 {
     public class UserService : IUserService
     {
         private readonly IUserRepository userRepository;
-        public UserService(IUserRepository userRepository)
+        private readonly IMapper mapper;
+
+        public UserService(IUserRepository userRepository, IMapper mapper )
         {
             this.userRepository = userRepository;
+            this.mapper = mapper;
         }
 
-        public void Create(User user)
+        public void Create(UserCreateRequest userCreateRequest)
         {
-            userRepository.Add(user);
+            userRepository.Add(mapper.Map<User>(userCreateRequest));
         }
 
         public void Delete(User user)
@@ -41,9 +46,9 @@ namespace StocksManagement.Application.Services
             userRepository.DeleteById(id);
         }
 
-        public void Update(User user)
+        public void Update(UserUpdateRequest userUpdateRequest)
         {
-            userRepository.Edit(user);
+            userRepository.Edit(mapper.Map<User>(userUpdateRequest));
         }
     }
 

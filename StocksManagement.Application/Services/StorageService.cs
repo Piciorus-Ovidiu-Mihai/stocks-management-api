@@ -1,5 +1,8 @@
-﻿using StocksManagement.Application.ServicesInterfaces;
+﻿using AutoMapper;
+using StocksManagement.Application.ServicesInterfaces;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.Storage.Request;
+using StocksManagement.Domain.Models.Storage.Response;
 using StocksManagement.Domain.RepositoryInterfaces.Repositories;
 
 namespace StocksManagement.Application.Services
@@ -7,15 +10,17 @@ namespace StocksManagement.Application.Services
     public class StorageService : IStorageService
     {
         private readonly IStorageRepository storageRepository;
+        private readonly IMapper mapper;
 
-        public StorageService(IStorageRepository storageRepository)
+        public StorageService(IStorageRepository storageRepository, IMapper mapper)
         {
             this.storageRepository = storageRepository;
+            this.mapper = mapper;
         }
 
-        public void Create(Storage storage)
+        public void Create(StorageCreateRequest storageCreateRequest)
         {
-            storageRepository.Add(storage);
+            storageRepository.Add(mapper.Map<Storage>(storageCreateRequest));
         }
 
         public void Delete(Storage storage)
@@ -38,9 +43,9 @@ namespace StocksManagement.Application.Services
             return await storageRepository.GetById(id);
         }
 
-        public void Update(Storage storage)
+        public void Update(StorageUpdateRequest storageUpdateRequest)
         {
-            storageRepository.Edit(storage);
+            storageRepository.Edit(mapper.Map<Storage>(storageUpdateRequest));
         }
 
         public void UpdateById(int id)

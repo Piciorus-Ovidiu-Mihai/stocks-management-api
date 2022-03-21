@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StocksManagement.Application.ServicesInterfaces;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.User.Request;
 
 namespace StocksManagement.API.Controllers
 {
@@ -20,29 +21,29 @@ namespace StocksManagement.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{userId}")]
         public async Task<ActionResult> GetUserById(int userId)
         {
             var result = await userService.GetUserById(userId);
             return Ok(result);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{userId}")]
         public void DeleteUserById(int userId)
         {
             userService.DeleteById(userId);
         }
 
         [HttpPut]
-        public void Update(User user)
+        public void Update(UserUpdateRequest userUpdateRequest)
         {
-            userService.Update(user);
+            userService.Update(userUpdateRequest);
         }
 
         [HttpPost]
-        public void Create(User user)
+        public void Create(UserCreateRequest userCreateRequest)
         {
-            userService.Create(user);
+            userService.Create(userCreateRequest);
         }
     }
 }

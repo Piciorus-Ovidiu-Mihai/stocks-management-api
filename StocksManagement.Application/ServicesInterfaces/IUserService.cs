@@ -1,4 +1,5 @@
 ﻿using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.User.Request;
 
 namespace StocksManagement.Application.ServicesInterfaces
 {
@@ -6,8 +7,8 @@ namespace StocksManagement.Application.ServicesInterfaces
     {
         public Task<User> GetUserById(int id);
         public Task<IEnumerable<User>> GetAllUsers();
-        public void Create(User user);
-        public void Update(User user);
+        public void Create(UserCreateRequest user);
+        public void Update(UserUpdateRequest user);
         public void Delete(User user);
         public void UpdateById(int id);
         public void DeleteById(int id);

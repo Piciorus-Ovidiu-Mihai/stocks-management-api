@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StocksManagement.Application.ServicesInterfaces;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.Storage.Request;
 
 namespace StocksManagement.API.Controllers
 {
@@ -20,30 +21,29 @@ namespace StocksManagement.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{storageId}")]
         public async Task<ActionResult> GetStorageById(int storageId)
         {
             var result = await storageService.GetStorageById(storageId);
             return Ok(result);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{storageId}")]
         public void DeleteStorageById(int storageId)
         {
             storageService.DeleteById(storageId);
         }
 
         [HttpPut]
-        public void Update(Storage storage)
+        public void Update(StorageUpdateRequest storageUpdateRequest)
         {
-            storageService.Update(storage);
+            storageService.Update(storageUpdateRequest);
         }
 
         [HttpPost]
-        public void Create(Storage storage)
+        public void Create(StorageCreateRequest storageCreateRequest)
         {
-            storageService.Create(storage);
+            storageService.Create(storageCreateRequest);
         }
-        
     }
 }

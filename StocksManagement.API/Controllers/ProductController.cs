@@ -22,14 +22,14 @@ namespace StocksManagement.API.Controllers
             return Ok(result);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{productId}")]
         public async Task<ActionResult> GetProductById(int productId)
         {
             var result = await productService.GetProductById(productId);
             return Ok(result);
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("{productId}")]
         public void DeleteProductById(int productId)
         {
             productService.DeleteById(productId);

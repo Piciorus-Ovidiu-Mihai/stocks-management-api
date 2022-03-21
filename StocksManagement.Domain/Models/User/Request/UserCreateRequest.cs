@@ -1,4 +1,4 @@
-﻿namespace StocksManagement.Domain.Models.User
+﻿namespace StocksManagement.Domain.Models.User.Request
 {
     public class UserCreateRequest
     {
