@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StocksManagement.Application.ServicesInterfaces;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.Product.Request;
 using StocksManagement.Domain.Models.Storage.Request;
 
 namespace StocksManagement.API.Controllers
@@ -22,20 +23,20 @@ namespace StocksManagement.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult> GetProductById(int userId)
+        public async Task<ActionResult> GetProductById(int productId)
         {
-            var result = await productService.GetProductById(userId);
+            var result = await productService.GetProductById(productId);
             return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public void DeleteProductById(int userId)
+        public void DeleteProductById(int productId)
         {
-            productService.DeleteById(userId);
+            productService.DeleteById(productId);
         }
 
         [HttpPut]
-        public void Update(Product product)
+        public void Update(ProductUpdateRequest product)
         {
             productService.Update(product);
         }

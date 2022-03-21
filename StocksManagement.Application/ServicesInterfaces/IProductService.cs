@@ -1,4 +1,5 @@
 ﻿using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.Product.Request;
 using StocksManagement.Domain.Models.Storage.Request;
 
 namespace StocksManagement.Application.ServicesInterfaces
@@ -8,7 +9,7 @@ namespace StocksManagement.Application.ServicesInterfaces
         public Task<Product> GetProductById(int id);
         public Task<IEnumerable<Product>> GetAllProducts();
         public void Create(ProductCreateRequest productCreateRequest);
-        public void Update(Product product);
+        public void Update(ProductUpdateRequest productUpdateRequest);
         public void Delete(Product product);
         public void DeleteById(int id);
         public void UpdateById(int id);

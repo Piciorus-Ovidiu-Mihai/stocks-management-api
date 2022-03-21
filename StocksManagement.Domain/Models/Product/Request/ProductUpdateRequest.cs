@@ -1,6 +1,6 @@
-﻿namespace StocksManagement.Domain.Models.Storage.Request
+﻿namespace StocksManagement.Domain.Models.Product.Request
 {
-    public class ProductCreateRequest
+    public class ProductUpdateRequest
     {
         public string Name { get; set; }
         public string Description { get; set; }

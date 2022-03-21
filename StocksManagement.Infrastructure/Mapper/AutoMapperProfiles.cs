@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.Product.Request;
 using StocksManagement.Domain.Models.Storage.Request;
 
 namespace StocksManagement.Infrastructure.Mapper
@@ -10,6 +11,8 @@ namespace StocksManagement.Infrastructure.Mapper
         {
             CreateMap<Product, ProductCreateRequest>();
             CreateMap<ProductCreateRequest, Product>();
+            CreateMap<Product, ProductUpdateRequest>();
+            CreateMap<ProductUpdateRequest, Product>();
         }
     }
 }

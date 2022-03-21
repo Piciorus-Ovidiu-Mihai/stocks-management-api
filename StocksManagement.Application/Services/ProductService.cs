@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using StocksManagement.Application.ServicesInterfaces;
 using StocksManagement.Domain.Entities;
+using StocksManagement.Domain.Models.Product.Request;
 using StocksManagement.Domain.Models.Storage.Request;
 using StocksManagement.Domain.RepositoryInterfaces.Repositories;
 
@@ -37,9 +38,9 @@ namespace StocksManagement.Application.Services
             return await productRepository.GetById(id);
         }
 
-        public void Update(Product product)
+        public void Update(ProductUpdateRequest productUpdateRequest)
         {
-            productRepository.Edit(product);
+            productRepository.Edit(mapper.Map<Product>(productUpdateRequest));
         }
 
         public void UpdateById(int id)
