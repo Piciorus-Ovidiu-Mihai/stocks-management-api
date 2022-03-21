@@ -2,5 +2,7 @@
 {
     public class StorageCreateRequest
     {
+        public string Name { get; set; }
+        public string Location { get; set; }
     }
 }

@@ -2,5 +2,6 @@
 {
     public class GetAllUserResponse
     {
+        List<GetUserResponse> users { get; set; }
     }
 }

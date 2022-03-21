@@ -2,5 +2,6 @@
 {
     public class GetAllStoragesResponse
     {
+        List<GetStorageResponse> storages { get;set;}
     }
 }

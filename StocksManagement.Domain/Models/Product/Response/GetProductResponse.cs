@@ -1,4 +1,4 @@
-﻿namespace StocksManagement.Domain.Models.Storage.Response
+﻿namespace StocksManagement.Domain.Models.Product.Response
 {
     public class GetProductResponse
     {
