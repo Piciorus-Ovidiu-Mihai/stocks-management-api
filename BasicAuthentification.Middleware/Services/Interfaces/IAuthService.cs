@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BasicAuthentification.Middleware.Models;
 
 namespace BasicAuthentification.Middleware.Services.Interfaces
 {
     public interface IAuthService
     {
+        UserLoginResponse Login(UserLoginRequest userLoginRequest);
+        Task<UserLoginResponse> Register(UserRegisterRequest userRegisterRequest);
     }
 }
