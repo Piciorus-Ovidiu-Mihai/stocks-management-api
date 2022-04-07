@@ -17,6 +17,7 @@ namespace StocksManagement.Application.Services
             this.storageRepository = storageRepository;
             this.mapper = mapper;
         }
+
         public async Task<IEnumerable<Storage>> GetAllStorages()
         {
             return await storageRepository.GetAllAsync();

@@ -56,12 +56,13 @@ builder.Services.AddCors(options =>
 // Services & Repositories
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IStorageRepository, StorageRepository>();
-builder.Services.AddSingleton<IProductRepository, ProductRepository>();
+builder.Services.AddTransient<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<IStorageService, StorageService>();
 
 // Add Controllers & Swagger
 builder.Services.AddControllers();
