@@ -52,20 +52,20 @@ namespace StocksManagement.Infrastructure.Data.Generic
                    .AsEnumerable();
         }
 
-        public void Add(T entity)
+        public async Task<bool> Add(T entity)
         {
-            dbContext.Set<T>().Add(entity);
-            dbContext.SaveChangesAsync();
+            await dbContext.Set<T>().AddAsync(entity);
+            return await dbContext.SaveChangesAsync() > 0;
         }
-        public void Edit(T entity)
+        public async Task<bool> Edit(T entity)
         {
             dbContext.Entry(entity).State = EntityState.Modified;
-            dbContext.SaveChangesAsync();
+            return await dbContext.SaveChangesAsync() > 0;
         }
-        public void Delete(T entity)
+        public async Task<bool> Delete(T entity)
         {
             dbContext.Set<T>().Remove(entity);
-            dbContext.SaveChangesAsync();
+            return await dbContext.SaveChangesAsync() > 0;
         }
     }
 }

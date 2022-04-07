@@ -12,5 +12,6 @@ namespace StocksManagement.Application.ServicesInterfaces
         public void Delete(User user);
         public void UpdateById(int id);
         public void DeleteById(int id);
+        IList<string> GetUserRoles(int id);
     }
 }

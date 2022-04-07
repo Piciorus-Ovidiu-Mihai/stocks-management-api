@@ -1,8 +1,9 @@
-﻿namespace StocksManagement.Domain.Entities
+﻿using StocksManagement.Application.RepositoryInterfaces.Generic;
+
+namespace StocksManagement.Domain.Entities
 {
-    public class Role
+    public class Role : BaseEntity
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public ICollection<User> Users { get; set; }
     }

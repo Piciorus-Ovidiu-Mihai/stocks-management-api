@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksManagement.API", "StocksManagement.API\StocksManagement.API.csproj", "{09B9C972-C71D-4298-8AC1-FEC3B34D90C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksManagement.API", "StocksManagement.API\StocksManagement.API.csproj", "{09B9C972-C71D-4298-8AC1-FEC3B34D90C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksManagement.Domain", "StocksManagement.Domain\StocksManagement.Domain.csproj", "{2DE5E835-C200-461E-8396-A0D628D2A191}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksManagement.Domain", "StocksManagement.Domain\StocksManagement.Domain.csproj", "{2DE5E835-C200-461E-8396-A0D628D2A191}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksManagement.Infrastructure", "StocksManagement.Infrastructure\StocksManagement.Infrastructure.csproj", "{21C0B6F6-469D-4942-B7C8-7093105BE215}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksManagement.Infrastructure", "StocksManagement.Infrastructure\StocksManagement.Infrastructure.csproj", "{21C0B6F6-469D-4942-B7C8-7093105BE215}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksManagement.Application", "StocksManagement.Application\StocksManagement.Application.csproj", "{323437C6-B49F-4AA0-B566-22228FEE0D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StocksManagement.Application", "StocksManagement.Application\StocksManagement.Application.csproj", "{323437C6-B49F-4AA0-B566-22228FEE0D65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAuthentification.Middleware", "BasicAuthentification.Middleware\BasicAuthentification.Middleware.csproj", "{0B52FA27-3245-469A-AF2A-325328615435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{323437C6-B49F-4AA0-B566-22228FEE0D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{323437C6-B49F-4AA0-B566-22228FEE0D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{323437C6-B49F-4AA0-B566-22228FEE0D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B52FA27-3245-469A-AF2A-325328615435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B52FA27-3245-469A-AF2A-325328615435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B52FA27-3245-469A-AF2A-325328615435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B52FA27-3245-469A-AF2A-325328615435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,9 +10,9 @@ namespace StocksManagement.Application.RepositoryInterfaces.Generic
         IEnumerable<T> List(Expression<Func<T, bool>> predicate);
         void DeleteById(int id);
         void UpdateById(int id);
-        void Add(T entity);
-        void Delete(T entity);
-        void Edit(T entity);
+        Task<bool> Add(T entity);
+        Task<bool> Edit(T entity);
+        Task<bool> Delete(T entity);
     }
     public abstract class BaseEntity
     {

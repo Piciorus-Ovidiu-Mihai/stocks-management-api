@@ -50,6 +50,19 @@ namespace StocksManagement.Application.Services
         {
             userRepository.Edit(mapper.Map<User>(userUpdateRequest));
         }
+
+        public IList<string> GetUserRoles(int id)
+        {
+            var roles = new List<string>();
+
+            foreach (var role in userRepository.GetUserRolesAsync(id))
+            {
+                roles.Add(role.Name);
+            }
+
+            return roles;
+
+        }
     }
 
 }
