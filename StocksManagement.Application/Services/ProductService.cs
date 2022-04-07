@@ -18,16 +18,6 @@ namespace StocksManagement.Application.Services
             this.mapper = mapper;
         }
 
-        public void Create(ProductCreateRequest productCreateRequest)
-        {
-            productRepository.Add(mapper.Map<Product>(productCreateRequest));
-        }
-
-        public void Delete(Product product)
-        {
-            productRepository.Delete(product);
-        }
-
         public async Task<IEnumerable<Product>> GetAllProducts()
         {
             return await productRepository.GetAllAsync();
@@ -36,6 +26,11 @@ namespace StocksManagement.Application.Services
         public async Task<Product> GetProductById(int id)
         {
             return await productRepository.GetById(id);
+        }
+
+        public void Create(ProductCreateRequest productCreateRequest)
+        {
+            productRepository.Add(mapper.Map<Product>(productCreateRequest));
         }
 
         public void Update(ProductUpdateRequest productUpdateRequest)
@@ -48,6 +43,10 @@ namespace StocksManagement.Application.Services
             productRepository.UpdateById(id);
         }
 
+        public void Delete(Product product)
+        {
+            productRepository.Delete(product);
+        }
         public void DeleteById(int id)
         {
             productRepository.DeleteById(id);

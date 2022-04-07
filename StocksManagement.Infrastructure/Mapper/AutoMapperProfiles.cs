@@ -11,18 +11,20 @@ namespace StocksManagement.Infrastructure.Mapper
     {
         public AutoMapperProfiles()
         {
+
+            // Product
             CreateMap<Product, ProductCreateRequest>();
             CreateMap<ProductCreateRequest, Product>();
             CreateMap<Product, ProductUpdateRequest>();
             CreateMap<ProductUpdateRequest, Product>();
 
+            // Storage
             CreateMap<Storage, StorageCreateRequest>();
             CreateMap<StorageCreateRequest, Storage>();
             CreateMap<Storage, StorageUpdateRequest>();
             CreateMap<StorageUpdateRequest, Storage>();
 
-            CreateMap<User, UserCreateRequest>();
-            CreateMap<UserCreateRequest, User>();
+            // User
             CreateMap<User, UserUpdateRequest>();
             CreateMap<UserUpdateRequest, User>();
             CreateMap<User, UserRegisterRequest>();
@@ -32,9 +34,10 @@ namespace StocksManagement.Infrastructure.Mapper
             CreateMap<User, UserLoginResponse>();
             CreateMap<UserLoginResponse, User>();
             CreateMap<UserRegisterResponse, User>();
+
+            //Role
             CreateMap<User,UserRegisterResponse>();
             CreateMap<Role, RoleResponse>();
-
         }
     }
 }

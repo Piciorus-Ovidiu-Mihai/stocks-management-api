@@ -17,22 +17,6 @@ namespace StocksManagement.Application.Services
             this.storageRepository = storageRepository;
             this.mapper = mapper;
         }
-
-        public void Create(StorageCreateRequest storageCreateRequest)
-        {
-            storageRepository.Add(mapper.Map<Storage>(storageCreateRequest));
-        }
-
-        public void Delete(Storage storage)
-        {
-            storageRepository.Delete(storage);
-        }
-
-        public void DeleteById(int id)
-        {
-            storageRepository.DeleteById(id);
-        }
-
         public async Task<IEnumerable<Storage>> GetAllStorages()
         {
             return await storageRepository.GetAllAsync();
@@ -43,12 +27,27 @@ namespace StocksManagement.Application.Services
             return await storageRepository.GetById(id);
         }
 
+        public void Create(StorageCreateRequest storageCreateRequest)
+        {
+            storageRepository.Add(mapper.Map<Storage>(storageCreateRequest));
+        }
+
         public void Update(StorageUpdateRequest storageUpdateRequest)
         {
             storageRepository.Edit(mapper.Map<Storage>(storageUpdateRequest));
         }
 
         public void UpdateById(int id)
+        {
+            storageRepository.DeleteById(id);
+        }
+
+        public void Delete(Storage storage)
+        {
+            storageRepository.Delete(storage);
+        }
+
+        public void DeleteById(int id)
         {
             storageRepository.DeleteById(id);
         }

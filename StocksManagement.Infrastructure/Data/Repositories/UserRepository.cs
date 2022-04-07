@@ -14,7 +14,7 @@ namespace StocksManagement.Infrastructure.Data.Repositories
             this.dbContext = dbContext;
         }
 
-        public IEnumerable<Role> GetUserRolesAsync(int id)
+        public IEnumerable<Role> GetUserRoles(int id)
         {
             var user = dbContext.Users.Include(u => u.Roles).SingleOrDefault(u => u.Id == id);
 

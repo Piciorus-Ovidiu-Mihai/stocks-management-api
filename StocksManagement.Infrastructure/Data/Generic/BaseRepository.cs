@@ -7,13 +7,19 @@ namespace StocksManagement.Infrastructure.Data.Generic
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
-        private readonly ApplicationDbContext dbContext;
+        private readonly ApplicationDbContext _dbContext;
         private readonly DbSet<T> entities;
 
         public BaseRepository(ApplicationDbContext dbContext)
         {
-            this.dbContext = dbContext;
-            this.entities = dbContext.Set<T>();
+            _dbContext = dbContext;
+            entities = _dbContext.Set<T>();
+        }
+
+        public async Task<bool> Add(T entity)
+        {
+            await _dbContext.Set<T>().AddAsync(entity);
+            return await _dbContext.SaveChangesAsync() > 0;
         }
 
         public async Task<IEnumerable<T>> GetAllAsync()
@@ -23,49 +29,45 @@ namespace StocksManagement.Infrastructure.Data.Generic
 
         public async Task<T> GetById(int id)
         {
-            return await dbContext.Set<T>().FindAsync(id);
+            return await _dbContext.Set<T>().FindAsync(id);
         }
 
-        public virtual void DeleteById(int id)
+        public virtual IEnumerable<T> List()
         {
-            var entity = dbContext.Set<T>().Find(id);
-            dbContext.Set<T>().Remove(entity);
-            dbContext.SaveChangesAsync();
+            return _dbContext.Set<T>().AsEnumerable();
+        }
+
+        public virtual IEnumerable<T> List(Expression<Func<T, bool>> predicate)
+        {
+            return _dbContext.Set<T>()
+                   .Where(predicate)
+                   .AsEnumerable();
         }
 
         public async void UpdateById(int id)
         {
             var entity = await GetById(id);
-            dbContext.Entry(entity).State = EntityState.Modified;
-            _ = dbContext.SaveChangesAsync();
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            _ = _dbContext.SaveChangesAsync();
         }
 
-        public virtual IEnumerable<T> List()
-        {
-            return dbContext.Set<T>().AsEnumerable();
-        }
-
-        public virtual IEnumerable<T> List(Expression<Func<T, bool>> predicate)
-        {
-            return dbContext.Set<T>()
-                   .Where(predicate)
-                   .AsEnumerable();
-        }
-
-        public async Task<bool> Add(T entity)
-        {
-            await dbContext.Set<T>().AddAsync(entity);
-            return await dbContext.SaveChangesAsync() > 0;
-        }
         public async Task<bool> Edit(T entity)
         {
-            dbContext.Entry(entity).State = EntityState.Modified;
-            return await dbContext.SaveChangesAsync() > 0;
+            _dbContext.Entry(entity).State = EntityState.Modified;
+            return await _dbContext.SaveChangesAsync() > 0;
         }
+
         public async Task<bool> Delete(T entity)
         {
-            dbContext.Set<T>().Remove(entity);
-            return await dbContext.SaveChangesAsync() > 0;
+            _dbContext.Set<T>().Remove(entity);
+            return await _dbContext.SaveChangesAsync() > 0;
+        }
+
+        public virtual void DeleteById(int id)
+        {
+            var entity = _dbContext.Set<T>().Find(id);
+            _dbContext.Set<T>().Remove(entity);
+            _dbContext.SaveChangesAsync();
         }
     }
 }

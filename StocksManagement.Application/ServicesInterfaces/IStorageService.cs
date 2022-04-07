@@ -7,10 +7,10 @@ namespace StocksManagement.Application.ServicesInterfaces
     {
         public Task<Storage> GetStorageById(int id);
         public Task<IEnumerable<Storage>> GetAllStorages();
-        public void DeleteById(int id);
         public void Create(StorageCreateRequest storage);
         public void Update(StorageUpdateRequest storage);
-        public void Delete(Storage storage);
         public void UpdateById(int id);
+        public void Delete(Storage storage);
+        public void DeleteById(int id);
     }
 }

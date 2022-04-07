@@ -28,22 +28,17 @@ namespace StocksManagement.API.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("{userId}")]
-        public void DeleteUserById(int userId)
-        {
-            userService.DeleteById(userId);
-        }
-
         [HttpPut]
         public void Update(UserUpdateRequest userUpdateRequest)
         {
             userService.Update(userUpdateRequest);
         }
 
-        [HttpPost]
-        public void Create(UserCreateRequest userCreateRequest)
+        [HttpDelete("{userId}")]
+        public void DeleteUserById(int userId)
         {
-            userService.Create(userCreateRequest);
+            userService.DeleteById(userId);
         }
+
     }
 }

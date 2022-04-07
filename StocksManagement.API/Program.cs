@@ -56,7 +56,7 @@ builder.Services.AddCors(options =>
 // Services & Repositories
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IStorageRepository, StorageRepository>();
-builder.Services.AddTransient<IProductRepository, ProductRepository>();
+builder.Services.AddSingleton<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();

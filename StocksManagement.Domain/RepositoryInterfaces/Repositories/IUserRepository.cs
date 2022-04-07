@@ -5,7 +5,7 @@ namespace StocksManagement.Application.RepositoryInterfaces.Repositories
 {
     public interface IUserRepository : IBaseRepository<User>
     {
-        IEnumerable<Role> GetUserRolesAsync(int id);
+        IEnumerable<Role> GetUserRoles(int id);
         User GetUserByEmail(string email);
     }
 }

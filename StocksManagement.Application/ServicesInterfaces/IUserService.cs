@@ -7,11 +7,10 @@ namespace StocksManagement.Application.ServicesInterfaces
     {
         public Task<User> GetUserById(int id);
         public Task<IEnumerable<User>> GetAllUsers();
-        public void Create(UserCreateRequest user);
+        IList<string> GetUserRoles(int id);
         public void Update(UserUpdateRequest user);
         public void Delete(User user);
         public void UpdateById(int id);
         public void DeleteById(int id);
-        IList<string> GetUserRoles(int id);
     }
 }

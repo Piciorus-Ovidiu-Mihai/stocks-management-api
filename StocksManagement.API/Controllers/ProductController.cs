@@ -28,12 +28,6 @@ namespace StocksManagement.API.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("{productId}")]
-        public void DeleteProductById(int productId)
-        {
-            productService.DeleteById(productId);
-        }
-
         [HttpPut]
         public void Update(ProductUpdateRequest product)
         {
@@ -44,6 +38,12 @@ namespace StocksManagement.API.Controllers
         public void Create(ProductCreateRequest productCreateRequest)
         {
             productService.Create(productCreateRequest);
+        }
+
+        [HttpDelete("{productId}")]
+        public void DeleteProductById(int productId)
+        {
+            productService.DeleteById(productId);
         }
     }
 }

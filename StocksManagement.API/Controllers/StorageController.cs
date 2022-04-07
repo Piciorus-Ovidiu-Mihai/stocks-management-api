@@ -27,10 +27,10 @@ namespace StocksManagement.API.Controllers
             return Ok(result);
         }
 
-        [HttpDelete("{storageId}")]
-        public void DeleteStorageById(int storageId)
+        [HttpPost]
+        public void Create(StorageCreateRequest storageCreateRequest)
         {
-            storageService.DeleteById(storageId);
+            storageService.Create(storageCreateRequest);
         }
 
         [HttpPut]
@@ -39,10 +39,11 @@ namespace StocksManagement.API.Controllers
             storageService.Update(storageUpdateRequest);
         }
 
-        [HttpPost]
-        public void Create(StorageCreateRequest storageCreateRequest)
+        [HttpDelete("{storageId}")]
+        public void DeleteStorageById(int storageId)
         {
-            storageService.Create(storageCreateRequest);
+            storageService.DeleteById(storageId);
         }
+
     }
 }

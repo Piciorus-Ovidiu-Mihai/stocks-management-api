@@ -17,25 +17,33 @@ namespace StocksManagement.Application.Services
             this.mapper = mapper;
         }
 
-        public void Create(UserCreateRequest userCreateRequest)
-        {
-            userRepository.Add(mapper.Map<User>(userCreateRequest));
-        }
-
-        public void Delete(User user)
-        {
-            userRepository.Delete(user);
-        }
-
         public async Task<IEnumerable<User>> GetAllUsers()
         {
             return await userRepository.GetAllAsync();
+        }
+
+        public IList<string> GetUserRoles(int id)
+        {
+            var roles = new List<string>();
+
+            foreach (var role in userRepository.GetUserRoles(id))
+            {
+                roles.Add(role.Name);
+            }
+
+            return roles;
         }
 
         public async Task<User> GetUserById(int id)
         {
             return await userRepository.GetById(id);
         }
+
+        public void Update(UserUpdateRequest userUpdateRequest)
+        {
+            userRepository.Edit(mapper.Map<User>(userUpdateRequest));
+        }
+
         public void UpdateById(int id)
         {
             userRepository.DeleteById(id);
@@ -46,22 +54,9 @@ namespace StocksManagement.Application.Services
             userRepository.DeleteById(id);
         }
 
-        public void Update(UserUpdateRequest userUpdateRequest)
+        public void Delete(User user)
         {
-            userRepository.Edit(mapper.Map<User>(userUpdateRequest));
-        }
-
-        public IList<string> GetUserRoles(int id)
-        {
-            var roles = new List<string>();
-
-            foreach (var role in userRepository.GetUserRolesAsync(id))
-            {
-                roles.Add(role.Name);
-            }
-
-            return roles;
-
+            userRepository.Delete(user);
         }
     }
 
