@@ -25,6 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BasicAuthentification.Middleware\BasicAuthentification.Middleware.csproj" />
     <ProjectReference Include="..\StocksManagement.Application\StocksManagement.Application.csproj" />
     <ProjectReference Include="..\StocksManagement.Domain\StocksManagement.Domain.csproj" />
   </ItemGroup>

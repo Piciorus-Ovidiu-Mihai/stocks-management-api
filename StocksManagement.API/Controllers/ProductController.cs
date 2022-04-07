@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StocksManagement.Application.ServicesInterfaces;
-using StocksManagement.Domain.Entities;
 using StocksManagement.Domain.Models.Product.Request;
 using StocksManagement.Domain.Models.Storage.Request;
 

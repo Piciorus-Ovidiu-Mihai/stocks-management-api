@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BasicAuthentification.Middleware.Models;
 using StocksManagement.Domain.Entities;
 using StocksManagement.Domain.Models.Product.Request;
 using StocksManagement.Domain.Models.Storage.Request;
@@ -24,6 +25,16 @@ namespace StocksManagement.Infrastructure.Mapper
             CreateMap<UserCreateRequest, User>();
             CreateMap<User, UserUpdateRequest>();
             CreateMap<UserUpdateRequest, User>();
+            CreateMap<User, UserRegisterRequest>();
+            CreateMap<UserRegisterRequest, User>();
+            CreateMap<UserLoginRequest, User>();
+            CreateMap<User, UserLoginRequest>();
+            CreateMap<User, UserLoginResponse>();
+            CreateMap<UserLoginResponse, User>();
+            CreateMap<UserRegisterResponse, User>();
+            CreateMap<User,UserRegisterResponse>();
+            CreateMap<Role, RoleResponse>();
+
         }
     }
 }

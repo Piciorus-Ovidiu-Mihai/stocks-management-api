@@ -1,4 +1,5 @@
-﻿using StocksManagement.Domain.Entities;
+﻿
+using StocksManagement.Domain.Entities;
 
 namespace BasicAuthentification.Middleware.Services.Implementation
 {

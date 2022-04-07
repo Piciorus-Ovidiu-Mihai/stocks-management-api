@@ -47,7 +47,8 @@ namespace BasicAuthentification.Middleware.Services.Interfaces
 
             var user = mapper.Map<User>(userRegisterRequest);
             user.Password = BCrypt.Net.BCrypt.HashPassword(userRegisterRequest.Password);
-            user.Roles.Add(await roleRepository.GetById(2)); //Add as member
+            var role = await roleRepository.GetById(2);
+            user.Roles.Add(role); //Add as member
 
             if (!(await userRepository.Add(user)))
                 return null;

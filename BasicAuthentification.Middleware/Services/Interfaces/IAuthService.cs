@@ -1,4 +1,5 @@
-﻿using BasicAuthentification.Middleware.Models;
+﻿
+using BasicAuthentification.Middleware.Models;
 
 namespace BasicAuthentification.Middleware.Services.Interfaces
 {
