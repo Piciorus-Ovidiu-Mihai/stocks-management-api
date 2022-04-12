@@ -27,6 +27,13 @@ namespace StocksManagement.API.Controllers
             return Ok(result);
         }
 
+        [HttpGet("/products/{storageId}")]
+        public async Task<ActionResult> GetStorageProductsById(int storageId)
+        {
+            var result = await storageService.GetStorageProductsById(storageId);
+            return Ok(result);
+        }
+
         [HttpPost]
         public void Create(StorageCreateRequest storageCreateRequest)
         {

@@ -2,7 +2,9 @@
 using BasicAuthentification.Middleware.Models;
 using StocksManagement.Domain.Entities;
 using StocksManagement.Domain.Models.Product.Request;
+using StocksManagement.Domain.Models.Product.Response;
 using StocksManagement.Domain.Models.Storage.Request;
+using StocksManagement.Domain.Models.Storage.Response;
 using StocksManagement.Domain.Models.User.Request;
 
 namespace StocksManagement.Infrastructure.Mapper
@@ -17,12 +19,16 @@ namespace StocksManagement.Infrastructure.Mapper
             CreateMap<ProductCreateRequest, Product>();
             CreateMap<Product, ProductUpdateRequest>();
             CreateMap<ProductUpdateRequest, Product>();
+            CreateMap<GetProductResponse, Product>();
+            CreateMap<Product, GetProductResponse>();
 
             // Storage
             CreateMap<Storage, StorageCreateRequest>();
             CreateMap<StorageCreateRequest, Storage>();
             CreateMap<Storage, StorageUpdateRequest>();
             CreateMap<StorageUpdateRequest, Storage>();
+            CreateMap<GetStorageProductsById, Storage>();
+            CreateMap<Storage, GetStorageProductsById>();
 
             // User
             CreateMap<User, UserUpdateRequest>();
