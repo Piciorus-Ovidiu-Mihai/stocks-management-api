@@ -24,7 +24,8 @@ The second part of this layer is persistence, where we built the ApplicationDBCo
 Here is defined communication with the outside. This contains controllers, middlewares, Startup file, that represents all the configurations for the application to run. For example if we want to make some requests for getting or posting data from the client side, we have to make that through this layer.
 
 ### 📌 Architecture
-
+ ![alt text](https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/clean-architecture-onion-ring.png)<br/><br/><br/>
+ ![alt text](https://github.com/Piciorus-Ovidiu-Mihai/Photos/blob/master/clean-architecture-project.png)<br/><br/><br/>
 
 # 💽 Prerequisites
 * ⚙️ Visual Studio 
